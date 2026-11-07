@@ -71,9 +71,10 @@ body::after {
     right: 0;
     margin: 0;
     text-align: center;
-    font-size: clamp(1.3rem, 4.2vw, 2.1rem);
-    font-weight: 900;
-    letter-spacing: .06em;
+    font-family: 'Dancing Script', 'Brush Script MT', cursive;
+    font-size: clamp(2rem, 6.5vw, 3.6rem);
+    font-weight: 700;
+    letter-spacing: .02em;
     color: var(--neon-pink);
     text-shadow: 0 0 6px var(--neon-pink-light), 0 0 14px var(--neon-pink), 0 0 28px var(--neon-pink-deep), 0 2px 3px rgba(214, 0, 110, .6);
 }
