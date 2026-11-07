@@ -71,7 +71,7 @@ body::after {
     right: 0;
     margin: 0;
     text-align: center;
-    font-size: 2.4rem;
+    font-size: clamp(1.3rem, 4.2vw, 2.1rem);
     letter-spacing: .06em;
     background: linear-gradient(180deg, #fff 0%, var(--gold-light) 35%, var(--gold) 70%, var(--pink-deep) 100%);
     -webkit-background-clip: text;
