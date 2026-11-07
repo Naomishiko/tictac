@@ -11,6 +11,12 @@
  --gold: #f7c948;
  --gold-light: #ffe9a8;
  --gold-deep: #d4a017;
+ --neon-pink: #ff2d95;
+ --neon-pink-light: #ff7ac6;
+ --neon-pink-deep: #d6006e;
+ --neon-gold: #ffd60a;
+ --neon-gold-light: #fff3a0;
+ --neon-gold-deep: #e6a700;
 }
 
 body {
@@ -126,13 +132,13 @@ body::after {
     width: calc(var(--mark-size) * .15);
     height: var(--mark-size);
     border-radius: 999px;
-    background: linear-gradient(180deg, var(--gold-light), var(--gold) 55%, var(--gold-deep));
-    box-shadow: 0 0 10px rgba(247, 201, 72, .95), 0 0 4px rgba(255, 255, 255, .9);
+    background: linear-gradient(180deg, var(--neon-gold-light), var(--neon-gold) 55%, var(--neon-gold-deep));
+    box-shadow: 0 0 10px rgba(255, 214, 10, .95), 0 0 20px rgba(255, 214, 10, .7), 0 0 4px rgba(255, 255, 255, .9);
 }
 
 .board.x .cell:not(.x):not(.circle):hover::before,
 .board.x .cell:not(.x):not(.circle):hover::after {
-    background: linear-gradient(180deg, #fff6d8, #ffe28a);
+    background: linear-gradient(180deg, #fffbe0, var(--neon-gold-light));
     opacity: .7;
     box-shadow: none;
 }
@@ -154,13 +160,13 @@ body::after {
     width: var(--mark-size);
     height: var(--mark-size);
     border-radius: 50%;
-    border: calc(var(--mark-size) * .13) solid var(--pink-deep);
+    border: calc(var(--mark-size) * .13) solid var(--neon-pink-deep);
     background: transparent;
-    box-shadow: 0 0 12px rgba(255, 95, 174, .85), inset 0 0 8px rgba(255, 255, 255, .8);
+    box-shadow: 0 0 12px rgba(214, 0, 110, .95), 0 0 24px rgba(255, 45, 149, .7), inset 0 0 8px rgba(255, 255, 255, .8);
 }
 
 .board.circle .cell:not(.x):not(.circle):hover::before {
-    border-color: rgba(255, 95, 174, .5);
+    border-color: rgba(214, 0, 110, .5);
     box-shadow: none;
 }
 
