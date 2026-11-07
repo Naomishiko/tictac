@@ -71,13 +71,11 @@ body::after {
     right: 0;
     margin: 0;
     text-align: center;
-    font-size: 2.4rem;
+    font-size: clamp(1.3rem, 4.2vw, 2.1rem);
+    font-weight: 900;
     letter-spacing: .06em;
-    background: linear-gradient(180deg, #fff 0%, var(--gold-light) 35%, var(--gold) 70%, var(--pink-deep) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    filter: drop-shadow(0 0 8px rgba(247, 201, 72, .95)) drop-shadow(0 2px 2px rgba(255, 95, 174, .5));
+    color: var(--neon-pink);
+    text-shadow: 0 0 6px var(--neon-pink-light), 0 0 14px var(--neon-pink), 0 0 28px var(--neon-pink-deep), 0 2px 3px rgba(214, 0, 110, .6);
 }
 
 .board {
