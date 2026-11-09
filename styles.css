@@ -79,6 +79,10 @@ body::after {
     letter-spacing: 0;
     color: #000;
     text-shadow: none;
+    text-decoration: underline;
+    text-decoration-color: var(--neon-pink);
+    text-decoration-thickness: 0.06em;
+    text-underline-offset: 0.14em;
 }
 
 .board {
