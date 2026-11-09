@@ -79,10 +79,19 @@ body::after {
     letter-spacing: 0;
     color: #000;
     text-shadow: none;
-    text-decoration: underline;
-    text-decoration-color: var(--neon-pink);
-    text-decoration-thickness: 0.06em;
-    text-underline-offset: 0.14em;
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -0.12em;
+    transform: translateX(-50%);
+    width: min(72%, 560px);
+    height: clamp(4px, 0.07em, 10px);
+    border-radius: 999px;
+    background: var(--neon-pink);
+    box-shadow: 0 0 10px var(--neon-pink), 0 0 24px var(--neon-pink-light), 0 0 44px var(--neon-pink-deep);
 }
 
 .board {
